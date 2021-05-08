@@ -1,0 +1,442 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+/*header
+---------------------*/
+
+.header_bidual {
+	background-image: url(../img/mainbg.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header_bidual h1 {
+	padding-top:120px;
+	text-align: center;
+	color:white;
+	font-size: 3em;
+	text-shadow: 1px 1px 1px #808080;
+}
+.header_bidual p {
+	padding-bottom:120px ;
+	text-align: center;
+	color: white;
+	font-size: 2.25em;
+	text-shadow: 1px 1px 1px #808080;
+}
+
+/*nav
+---------------------*/
+.nav {
+	display: flex;
+	justify-content: space-around;
+	height: 80px;
+	margin-bottom: 120px;
+	border-bottom: solid 1px #bfbfbf;
+}
+
+.nav p {
+	height:80px;
+	width: 381px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav img {
+	width: 65%;
+	height: 65%;
+}
+
+.nav_menu {
+	display: flex;
+	align-items: center;
+}
+
+.nav_menu a {
+	display: block;
+	color: black;
+	width: 100%;
+	height: 100%;
+}
+
+.nav_menu li {
+	font-size: 21px;
+	padding:0px 20px;
+}
+
+
+/*about
+---------------------*/
+
+.about {
+	text-align: center;
+}
+
+.about_title {
+	margin-bottom: 24px;
+	color: #ffd61a;
+}
+
+.about_text_1 {
+	margin-bottom: 60px;
+}
+
+.about_text_2 {
+	margin-bottom: 40px;
+}
+
+.about_text_3 {
+	margin-bottom: 40px;
+}
+
+.about_text_4 {
+	margin-bottom: 40px;
+}
+
+.about_text_5 {
+	margin-bottom: 80px;
+}
+
+.slider {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin-bottom: 64px;
+}
+
+/*course
+---------------------*/
+.course {
+	margin-bottom: 64px;
+}
+
+.course_title {
+	text-align: center;
+	font-size: 24px;
+}
+
+.course_text1 {
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+.course_box1 {
+ display: flex;
+}
+
+.course_box_image {
+	width: 50%;
+}
+
+.course_box_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course_box_title{
+	font-size: 24px;
+}
+
+.course_box_text {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 48px;
+}
+
+.course_box_text h3 {
+	margin-bottom: 40px;
+}
+
+.course_box_text div {
+	width: 65%;
+}
+
+
+.course_box1.box2 {
+	flex-direction: row-reverse;
+}
+
+.course_box_text.box2 {
+	justify-content: flex-end;
+	padding-right: 48px;
+}
+
+/*news
+---------------------*/
+
+.news {
+	text-align: center;
+}
+
+.news_sub_title {
+	margin-bottom: 64px;
+}
+
+.news_container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 56px;
+}
+
+.news_title {
+	text-align: center;
+	color: #ffd61a;
+	font-size: 24px;
+}
+
+.news_box {
+	width: 960px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.news_content_box  {
+	text-align: left;
+}
+
+.news_content_box h3  {
+	font-size: 16px;
+	margin-top:32px;
+	margin-bottom: 24px;
+	font-weight: 100;
+}
+
+.news_content2 {
+	margin-left: 32px;
+}
+
+.news_content3 {
+ margin-left: 32px;
+}
+
+.button_box {
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	width: 300px;
+	color:white;
+	background-color: #ffd61a;
+	padding-top:16px;
+	padding-bottom:16px;
+	margin-bottom: 112px;
+}
+
+.button a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color:white;
+}
+
+/*access
+---------------------*/
+.access {
+	margin-bottom: 112px;
+}
+
+.access_title {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.access_sub_title {
+	text-align: center;
+}
+
+.map {
+	margin-bottom: 64px;
+}
+
+.access_list_box {
+	width: 580px;
+	margin: auto;
+}
+
+.access_inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.access_inner dt {
+	width:150px;
+	margin: 0 0 24px;
+}
+
+.access_inner dd {
+	width:430px;
+}
+
+/*contact
+---------------------*/
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact_title {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.contact_text_box {
+	text-align: center;
+}
+
+.contact_text_1 {
+	margin-bottom: 64px;
+}
+.contact_text_2 {
+	margin-bottom: 32px;
+}
+
+.contact_text_3 {
+	margin-bottom: 32px;
+}
+
+.contact_text_4 {
+	margin-bottom: 80px;
+}
+
+/*form
+---------------------*/
+.form-wrapper {
+	width: 560px;
+	margin: auto;
+}
+
+.form-inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 40px;
+}
+
+.form-title {
+	width:152px;
+	margin: 0 20px 0 0;
+	font-weight: bold;
+	text-align: left;
+	padding:8px 0 0 0;
+}
+
+.form-title.check-radio {
+	padding: 0;
+}
+
+.check-radio {
+	display: flex;
+	flex-direction: column;
+	padding-top: 8px;
+}
+
+.radio-item {
+	margin-bottom: 24px;
+}
+
+.form-item {
+	width:388px;
+	margin: 0 0 32px;
+}
+
+.form-parts.textarea {
+	width: 328px;
+	padding: 17px 0 17px;
+}
+
+
+
+.form-parts {
+	width: 100%;
+	font-size:1.6rem;
+	border: solid 1px #bfbfbf;
+	padding: 8px;
+}
+
+.button-submit {
+	display: block;
+	width: 298px;
+	height: 54px;
+	border: none;
+	margin: auto;
+	margin-bottom: 240px;
+}
+
+.to_top{
+	text-align: right;
+}
+
+
+
+.to_top a:before{
+	content:"";
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: gray;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid white;
+	position: fixed;
+	right: 30px;
+	bottom: 36px;
+	z-index: 1;
+
+}
+
+
+/*footer
+---------------------*/
+.footer-wrapper {
+	background-color: gray;
+}
+
+.footer-wrapper p{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding: 32px 0px;
+	color:white;
+	font-size: 18px;
+}
